@@ -17,8 +17,12 @@
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
   </head>
   <body>
+    <!--Navigation Bar-->
+
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
       <a href="#" class="navbar-brand">Whiskey Drop</a>
       <!--Adding a button with the class of navbar-toggler and ml-auto to push to righ. Data toggle tells bootstrap that this button will be used as a trigger for a collapsible element somewher on the page. 
@@ -77,21 +81,29 @@
         <a href="/login">Sign in / Sign Up</a>
       </div>
     </nav>
-    <!--COntainer is a bootstrap class that creates a single coloumn-->
-    <article class="container mt-3">
+    <!----End of Navigation Bar-->
+
+    <!--Container is a bootstrap class that creates a single coloumn-->
+
+    <!--Sales Alert!!!
       <div class="row d-none d-sm-block">
         <div class="col-12">
+         
           <div class="alert alert-warning">
             <strong>Sale Now On! </strong>Get a 12 month subscription for the
             price of 6! <a href="/sale">See here for details!</a>
           </div>
         </div>
       </div>
-      <!--Callout-->
+      To ammend later-->
+    <!--Callout-->
+    <div class="container-fluid callout-container">
+     <div class="bg-cover">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
             <h1>The finest whiskeys delivered to your doorstep.</h1>
+            <hr class="red-break"/>
             <p>
               Sign up today to start receving the world's best whiskeys every
               month. <s class="d-none d-sm-inline">£19.99</s>
@@ -101,7 +113,13 @@
             </p>
             <!--setting data-toggle="modal" will mean button will trigger modal somewhere on page
                data-target targets the specific model #used as the modal as id signupmodal-->
-            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signupmodal">Sign Up</button>
+            <button
+              class="btn signup-btn"
+              data-toggle="modal"
+              data-target="#signupmodal"
+            >
+              Sign Up!
+            </button>
             <p class="text-muted">
               <small
                 >You must be over 18 to sign up. Please drink
@@ -110,12 +128,14 @@
             </p>
             <!--text muted is a bootstrap class that makes the text appear lighter-->
           </section>
+          
         </div>
       </div>
-      <!--End of Callout-->
-      <hr />
-      <!--Quotes-->
+    </div>
+    <!--End of Callout-->
 
+    <!--Quotes-->
+    <div class="container quotes-container">
       <section class="quotes">
         <div class="row">
           <div class="col-12 my-5">
@@ -167,9 +187,11 @@
           </div>
         </div>
       </section>
-      <!--End of quotes-->
-      <hr />
-      <!--Features-->
+    </div>
+    <!--End of quotes-->
+
+    <!--Features-->
+    <div class="container features-container">
       <section class="features">
         <div class="row">
           <div class="col-12 my-5">
@@ -208,9 +230,10 @@
           </div>
         </div>
       </section>
-      <!--End of Features-->
-    </article>
+    </div>
+    <!--End of Features-->
 
+    <!--End of modal sign up form-->
     <div class="modal" tabindex="-1" role="dialog" id="signupmodal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -227,27 +250,44 @@
           </div>
           <div class="modal-body">
             <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-    <div class="form-group">
-    <label for="repeatPassword">Repeat Password</label>
-    <input type="password" class="form-control" id="repeatPassword">
-  </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="repeatPassword">Repeat Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="repeatPassword"
+                />
+              </div>
 
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!--End of article-->
+    <!--End of modal sign-up form-->
+
+    <!--Java sources-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
