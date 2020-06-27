@@ -2,6 +2,59 @@ body{
     font-family: 'Oswald', sans-serif;
 }
 
+.navalert-container .col-12{
+    padding-left:0;
+    padding-right:0;
+}
+
+.site-wide-alert{
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+}
+
+.alert-warning{
+    background-color: #dd9811;
+    border-color: #dd9811;
+    letter-spacing: 1px;
+}
+/*Navbar*/
+.navalert-container{
+    position: absolute;
+    top:0;
+    left:0;
+    padding-left: 0;
+    padding-right:0;
+    z-index:1;
+}
+
+.navbar{
+    margin-bottom: 0;
+    border:0;
+    width:100%;
+    background-color: rgba(0,0,0,0.25)
+}
+
+.navbar .navbar-toggler{
+    border:none;
+}
+
+.navbar-brand{
+    font-weight:bold;
+}
+
+.navbar .navbar-nav a{
+    font-weight:bold;
+}
+.navbar p{
+    font-size: 110%;
+    letter-spacing: 1px;
+}
+.navbar .navbar-text{
+    color:white;
+}
+
+/*Callout Section*/
 .callout-container {
     height:100vh;
     background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed; 
@@ -33,21 +86,24 @@ body{
     color:white;
     font-weight:bold;
     margin-bottom: 30px;
+    font-size:500%;
 }
 
 .jumbotron p{
     color:whitesmoke;
     font-weight: 300;
     letter-spacing: 1px;
+    font-size:x-large;
 
 }
 .jumbotron small{
     color: #d0d0d0;
     font-style: italic;
+    font-size:60%;
 }
 
 .bg-cover{
-    background-color: rgba(0, 0,0, 0.5);
+    background-color: rgba(0,0,0, 0.5);
     position: absolute;
     width:100%;
     height:100%;
@@ -58,7 +114,7 @@ body{
 /*Line Breaks*/
 
 .red-break{
-    width: 100px;
+    width: 75px;
     border-style: none;
     height: 5px;
     background-color: #d95050;
@@ -66,12 +122,21 @@ body{
 
 /*Buttons*/
 .signup-btn{
+    color:white;
     border-radius: 23px;
     width: 160px;
     font-weight: bold;
     height: 50px;
     background-color: #d95050;
     border-color: #d95050;
-    color:white;
+    
     font-size: 125%;
+}
+
+.signup-btn:hover,
+.signup-btn:active,
+.signup-btn:focus,
+.signup-btn:active:focus{
+    background-color:#93311c;
+    border-color:#93311c;
 }
