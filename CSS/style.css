@@ -140,3 +140,9 @@ body{
     background-color:#93311c;
     border-color:#93311c;
 }
+
+@media screen and (max-width: 768px) {
+    .container-fluid .jumbotron h1{
+        font-size: 250%
+        }
+}
