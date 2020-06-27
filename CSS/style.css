@@ -121,6 +121,8 @@ body{
 .quotes .page-header{
     margin-bottom: 30px;
 }
+
+
 /*content containers*/
 
 .content-container{
@@ -179,6 +181,7 @@ body{
     border-style: none;
     height: 5px;
     background-color:white;
+    margin-bottom: 30px;
 }
 
 .black-break{
