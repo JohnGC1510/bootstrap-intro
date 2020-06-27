@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	
+
 
 	<div class="container-fluid navalert-container">
 		<!--Sales Alert-->
@@ -30,7 +30,7 @@
 				</div>
 			</div>
 		</div>
-        <!--Navigation Bar-->
+		<!--Navigation Bar-->
 		<nav class="navbar navbar-dark navbar-expand-sm">
 			<a href="#" class="navbar-brand">Whiskey Drop</a>
 			<!--Adding a button with the class of navbar-toggler and ml-auto to push to righ. Data toggle tells bootstrap that this button will be used as a trigger for a collapsible element somewher on the page. 
@@ -126,41 +126,21 @@
 	<!--End of Callout-->
 
 	<!--Quotes-->
-	<div class="container quotes-container">
-		<section class="quotes">
-			<div class="row">
-				<div class="col-12 my-5">
-					<h2 class="text-uppercase">Quotes:</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-6">
-					<div class="media">
-						<div class="d-none d-sm-block">
-							<img
-                  src="images/girl-image.png"
-                  class="rounded-circle mr-3"
-                  height="100"
-                  width="100"
-                />
-              </div>
-							<div class="media-body">
-								<blockquote class="blockquote">
-									<!--blockquote is default quote styling from bootstrap-->
-									<p>
-										I've been introduced to more than 10 great international
-										whiskeys I never knew about.
-									</p>
-									<p>- Jane Doe</p>
-								</blockquote>
-							</div>
-						</div>
+	<div class="container-wrapper">
+		<div class="container quotes-container content-container">
+			<section class="quotes">
+				<div class="row">
+					<div class="col-12 page-header">
+						<h2 class="text-uppercase">Quotes:</h2>
+						<hr class="black-break">
 					</div>
+				</div>
+				<div class="row">
 					<div class="col-12 col-md-6">
 						<div class="media">
 							<div class="d-none d-sm-block">
 								<img
-                  src="images/guy-image.png"
+                  src="images/girl-image.png"
                   class="rounded-circle mr-3"
                   height="100"
                   width="100"
@@ -168,59 +148,85 @@
               </div>
 								<div class="media-body">
 									<blockquote class="blockquote">
+										<!--blockquote is default quote styling from bootstrap-->
 										<p>
-											I haven't been sober for months!
+											I've been introduced to more than 10 great international
+											whiskeys I never knew about.
 										</p>
-										<p>- John Campbell</p>
+										<p>- Jane Doe</p>
 									</blockquote>
 								</div>
 							</div>
 						</div>
-					</div>
-		</section>
+						<div class="col-12 col-md-6">
+							<div class="media">
+								<div class="d-none d-sm-block">
+									<img
+                  src="images/guy-image.png"
+                  class="rounded-circle mr-3"
+                  height="100"
+                  width="100"
+                />
+              </div>
+									<div class="media-body">
+										<blockquote class="blockquote">
+											<p>
+												I haven't been sober for months!
+											</p>
+											<p>- John Campbell</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+			</section>
+		</div>
 	</div>
 	<!--End of quotes-->
 
 	<!--Features-->
-	<div class="container features-container">
-		<section class="features">
-			<div class="row">
-				<div class="col-12 my-5">
-					<h2 class="text-uppercase">Features:</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-6 col-lg-4">
-					<div class="feature">
-						<h3>
-							<i class="fas fa-gift d-none d-sm-block"></i> Feature 1
-							<span class="badge badge-success">New!!</span>
-						</h3>
-						<p>Placeholder text</p>
-						<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+	<div class="container-wrapper--red">
+		<div class="container features-container content-container">
+			<section class="features">
+				<div class="row">
+					<div class="col-12 page-header">
+						<h2 class="text-uppercase">Features:</h2>
+                        <hr class="white-break"/>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-4">
-					<div class="feature">
-						<h3>
-							<i class="fab fa-cc-mastercard d-none d-sm-block"></i> Feature 2
-						</h3>
-						<p>Placeholder text</p>
-						<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="feature">
+							<h3>
+								<i class="fas fa-gift d-none d-sm-block"></i> Feature 1
+								<span class="badge badge-success">New!!</span>
+							</h3>
+							<p>Placeholder text</p>
+							<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="feature">
+							<h3>
+								<i class="fab fa-cc-mastercard d-none d-sm-block"></i> Feature 2
+							</h3>
+							<p>Placeholder text</p>
+							<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+						</div>
+					</div>
+					<!--d-md-none prevents the 3rd feature being displayed on medium screen sizes.and display this feautre on large screens-->
+					<div class="col-12 d-md-none d-lg-block col-lg-4">
+						<div class="feature">
+							<h3>
+								<i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3
+							</h3>
+							<p>Placeholder text</p>
+							<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
+						</div>
 					</div>
 				</div>
-				<!--d-md-none prevents the 3rd feature being displayed on medium screen sizes.and display this feautre on large screens-->
-				<div class="col-12 d-md-none d-lg-block col-lg-4">
-					<div class="feature">
-						<h3>
-							<i class="fas fa-times-circle d-none d-sm-block"></i> Feature 3
-						</h3>
-						<p>Placeholder text</p>
-						<p><a class="btn btn-sm btn-light" href="#">Read More</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</div>
 	<!--End of Features-->
 
