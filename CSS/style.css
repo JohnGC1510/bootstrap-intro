@@ -211,7 +211,7 @@ body{
     border-color:#93311c;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .container-fluid .jumbotron h1{
         font-size: 250%
         }
